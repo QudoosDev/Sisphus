@@ -69,12 +69,12 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className="min-h-[calc(100vh-73px)] flex items-center pt-8 pb-4 px-6 overflow-hidden bg-white">
+    <section className="min-h-[calc(100vh-80px)] flex flex-col items-center justify-center pt-4 pb-0 px-6 overflow-hidden bg-white">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full mb-6 border border-gray-200"
+          className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full mb-4 border border-gray-200"
         >
           <div className="flex -space-x-2">
             {[1, 2, 3].map((i) => (
@@ -96,7 +96,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-4xl md:text-6xl lg:text-[72px] font-heading font-bold text-text-dark leading-[1.05] tracking-[-0.02em] mb-4"
+          className="text-4xl md:text-5xl lg:text-[64px] font-heading font-bold text-text-dark leading-[1.05] tracking-[-0.02em] mb-3"
         >
           Life Feels Empty Without <br />
           <span className="text-brand">Beautiful Design</span>
@@ -106,20 +106,20 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-text-muted max-w-md mb-8 text-sm leading-relaxed"
+          className="text-text-muted max-w-md mb-6 text-sm leading-relaxed"
         >
           We create and design applications, websites, or other digital products with professionalism
         </motion.p>
         
-        <div className="relative w-full flex justify-center mb-[-3.5rem] z-0">
+        <div className="relative w-full flex justify-center mb-[-12rem] z-0">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="w-full max-w-4xl transition-all duration-700"
+            className="w-full max-w-5xl transition-all duration-700"
           >
             <Image
-              src="/hero%20section.png" 
+              src="/hero-section.png" 
               alt="Professional Team" 
               width={1600} 
               height={900} 
@@ -134,38 +134,38 @@ const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="bg-[#1E1E2E] w-full max-w-5xl p-6 rounded-[40px] grid grid-cols-1 md:grid-cols-4 gap-6 relative z-20"
+          className="bg-[#1E1E2E] w-full max-w-4xl px-4 py-4 md:px-6 md:py-6 rounded-[32px] grid grid-cols-1 md:grid-cols-4 gap-4 relative z-20 shadow-2xl"
         >
           {/* Card 1: Blue highlighted */}
-          <div className="bg-brand rounded-[32px] p-8 text-left text-white relative flex flex-col justify-between overflow-hidden group cursor-pointer">
-            <div className="absolute top-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-text-dark transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
-              <ArrowUpRight size={24} />
+          <div className="bg-brand rounded-[24px] p-6 text-left text-white relative flex flex-col justify-between overflow-hidden group cursor-pointer">
+            <div className="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center text-text-dark transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
+              <ArrowUpRight size={18} />
             </div>
             <div className="mt-2">
-              <div className="text-4xl font-heading font-bold mb-1">50K+</div>
-              <div className="text-xs font-medium opacity-80 mb-4">Satisfied clients</div>
-              <p className="text-[10px] leading-relaxed opacity-90 max-w-[140px]">
+              <div className="text-3xl font-heading font-bold mb-1">50K+</div>
+              <div className="text-[10px] font-medium opacity-80 mb-2">Satisfied clients</div>
+              <p className="text-[9px] leading-tight opacity-90 max-w-[120px]">
                 Our awesome clients are industry experts around the world
               </p>
             </div>
           </div>
 
           {/* Card 2: White */}
-          <div className="bg-white rounded-[32px] p-8 flex flex-col items-center justify-center text-text-dark">
-            <div className="text-4xl font-heading font-bold mb-2">13+</div>
-            <div className="text-xs font-semibold text-text-muted">Years Experience</div>
+          <div className="bg-white rounded-[24px] p-6 flex flex-col items-center justify-center text-text-dark">
+            <div className="text-3xl font-heading font-bold mb-1">13+</div>
+            <div className="text-[10px] font-semibold text-text-muted">Years Experience</div>
           </div>
 
           {/* Card 3: White */}
-          <div className="bg-white rounded-[32px] p-8 flex flex-col items-center justify-center text-text-dark">
-            <div className="text-4xl font-heading font-bold mb-2">20</div>
-            <div className="text-xs font-semibold text-text-muted">Professional Designer</div>
+          <div className="bg-white rounded-[24px] p-6 flex flex-col items-center justify-center text-text-dark">
+            <div className="text-3xl font-heading font-bold mb-1">20</div>
+            <div className="text-[10px] font-semibold text-text-muted">Professional Designer</div>
           </div>
 
           {/* Card 4: White */}
-          <div className="bg-white rounded-[32px] p-8 flex flex-col items-center justify-center text-text-dark">
-            <div className="text-4xl font-heading font-bold mb-2">10K</div>
-            <div className="text-xs font-semibold text-text-muted">Digital Product</div>
+          <div className="bg-white rounded-[24px] p-6 flex flex-col items-center justify-center text-text-dark">
+            <div className="text-3xl font-heading font-bold mb-1">10K</div>
+            <div className="text-[10px] font-semibold text-text-muted">Digital Product</div>
           </div>
         </motion.div>
       </div>
@@ -174,11 +174,26 @@ const Hero = () => {
 };
 
 const ServingSection = () => {
+  const offices = [
+    {
+      image: "/we-are-serving-1.png",
+      title: "Sisyphus Office",
+      location: "Bournemouth, Poole – UK",
+      alt: "Sisyphus Office space"
+    },
+    {
+      image: "/we-are-serving-2.png",
+      title: "Main Hub",
+      location: "London, City Center – UK",
+      alt: "Conference and meeting room"
+    }
+  ];
+
   return (
     <section className="py-24 px-6 md:px-10 bg-gray-50/50">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 mb-16 items-center">
-          <h2 className="text-4xl md:text-[48px] font-heading font-bold leading-[1.1] tracking-tight">
+          <h2 className="text-4xl md:text-[48px] font-heading font-bold leading-[1.1] tracking-tight text-text-dark">
             We are Serving <br />
             in <span className="text-brand">Various Countries</span>
           </h2>
@@ -191,41 +206,34 @@ const ServingSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 items-start">
-          <div className="relative overflow-hidden rounded-[40px] border border-gray-100">
-            <Image 
-              src="/We%20are%20serving%20section%20image%201.png" 
-              alt="Sisyphus Office space" 
-              width={1200} 
-              height={800} 
-              className="object-cover h-[480px] w-full"
-              referrerPolicy="no-referrer"
-            />
-            {/* Arrow Button - Top Right of Card */}
-            <div className="absolute top-8 right-8 w-16 h-16 bg-white rounded-full flex items-center justify-center text-text-dark cursor-pointer transition-transform hover:translate-x-1 hover:-translate-y-1">
-              <ArrowUpRight size={28} />
-            </div>
-            {/* Refined Info Label */}
-            <div className="absolute left-8 bottom-8">
-              <div className="bg-white px-8 py-5 rounded-[24px] border border-gray-50/50 min-w-[240px]">
-                <div className="flex items-center gap-3 mb-1">
-                  <div className="w-2 h-2 rounded-full bg-brand" />
-                  <span className="text-sm font-bold text-text-dark">Sisyphus Office</span>
+          {offices.map((office, idx) => (
+            <div key={idx} className="relative overflow-hidden rounded-[40px] border border-gray-100 group cursor-pointer">
+              <Image 
+                src={office.image} 
+                alt={office.alt} 
+                width={1200} 
+                height={800} 
+                className="object-cover h-[480px] w-full transition-transform duration-500 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              
+              {/* Arrow Button - Appear on Hover */}
+              <div className="absolute top-8 right-8 w-16 h-16 bg-white rounded-full flex items-center justify-center text-text-dark transition-all duration-300 opacity-0 translate-x-4 -translate-y-4 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 shadow-lg">
+                <ArrowUpRight size={28} />
+              </div>
+
+              {/* Info Label - Appear on Hover */}
+              <div className="absolute left-8 bottom-8 transition-all duration-300 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
+                <div className="bg-white px-8 py-5 rounded-[24px] border border-gray-50/50 min-w-[240px] shadow-xl">
+                  <div className="flex items-center gap-3 mb-1">
+                    <div className="w-2 h-2 rounded-full bg-brand" />
+                    <span className="text-sm font-bold text-text-dark">{office.title}</span>
+                  </div>
+                  <span className="text-[11px] font-medium text-text-muted ml-5 italic">{office.location}</span>
                 </div>
-                <span className="text-[11px] font-medium text-text-muted ml-5 italic">Bournemouth, Poole – UK</span>
               </div>
             </div>
-          </div>
-          
-          <div className="relative overflow-hidden rounded-[40px] border border-gray-100">
-            <Image 
-              src="/we%20are%20serving%20section%20image%202.png" 
-              alt="Conference and meeting room" 
-              width={1200} 
-              height={800} 
-              className="object-cover h-[480px] w-full"
-              referrerPolicy="no-referrer"
-            />
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -233,47 +241,43 @@ const ServingSection = () => {
 };
 
 const ServicesSection = () => {
+  const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
+  
   const services = [
     { 
       title: "UI/UX Design", 
       desc: "Product that have a good appearance can attract users", 
       icon: <Monitor size={24} />, 
-      highlight: false,
       iconColor: "bg-red-50 text-red-400"
     },
     { 
       title: "Logo branding", 
       desc: "Product identity is needed to have a characteristic", 
       icon: <Layout size={24} />, 
-      highlight: true,
-      iconColor: "bg-white text-brand"
+      iconColor: "bg-blue-50 text-brand"
     },
     { 
       title: "3D Design", 
       desc: "3D design is something new and has a high chance", 
       icon: <Box size={24} />, 
-      highlight: false,
       iconColor: "bg-emerald-50 text-emerald-400"
     },
     { 
       title: "Illustration", 
       desc: "Make your product more eye-catching with a touch of illustration", 
       icon: <PenTool size={24} />, 
-      highlight: false,
       iconColor: "bg-indigo-50 text-indigo-400"
     },
     { 
       title: "Digital Painting", 
       desc: "In this era, digital painting is still very popular with young people", 
       icon: <Palette size={24} />, 
-      highlight: false,
       iconColor: "bg-amber-50 text-amber-400"
     },
     { 
       title: "Print Design", 
       desc: "It is undeniable that businesses must still have print designs", 
       icon: <Printer size={24} />, 
-      highlight: false,
       iconColor: "bg-gray-100 text-gray-500"
     },
   ];
@@ -288,25 +292,30 @@ const ServicesSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, idx) => (
-            <div 
-              key={idx}
-              className={`p-10 rounded-[48px] flex flex-col gap-8 cursor-pointer group ${service.highlight ? 'bg-brand text-white' : 'bg-white text-text-dark border border-gray-100'}`}
-            >
-              <div className={`w-14 h-14 rounded-full flex items-center justify-center ${service.iconColor}`}>
-                {service.icon}
+          {services.map((service, idx) => {
+            const isHovered = hoveredIndex === idx;
+            return (
+              <div 
+                key={idx}
+                onMouseEnter={() => setHoveredIndex(idx)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={`p-10 rounded-[48px] flex flex-col gap-8 cursor-pointer group transition-all duration-300 ${isHovered ? 'bg-brand text-white shadow-xl -translate-y-1' : 'bg-white text-text-dark border border-gray-100'}`}
+              >
+                <div className={`w-14 h-14 rounded-full flex items-center justify-center transition-colors duration-300 ${isHovered ? 'bg-white/20 text-white' : service.iconColor}`}>
+                  {service.icon}
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h3 className="text-xl font-bold leading-tight">{service.title}</h3>
+                  <p className={`text-[13px] leading-relaxed max-w-[240px] transition-colors duration-300 ${isHovered ? 'text-blue-50' : 'text-text-muted'}`}>
+                    {service.desc}
+                  </p>
+                  <a href="#" className={`text-[13px] font-bold flex items-center gap-2 mt-2 transition-colors duration-300 ${isHovered ? 'text-white' : 'text-text-dark'} group-hover:text-blue-600`}>
+                    Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                  </a>
+                </div>
               </div>
-              <div className="flex flex-col gap-4">
-                <h3 className="text-xl font-bold leading-tight">{service.title}</h3>
-                <p className={`text-[13px] leading-relaxed max-w-[240px] ${service.highlight ? 'text-blue-50' : 'text-text-muted'}`}>
-                  {service.desc}
-                </p>
-                <a href="#" className={`text-[13px] font-bold flex items-center gap-2 mt-2 transition-colors ${service.highlight ? 'text-white' : 'text-text-dark'} group-hover:text-blue-600`}>
-                  Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-                </a>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -314,6 +323,33 @@ const ServicesSection = () => {
 };
 
 const ProjectsSection = () => {
+  const projects = [
+    {
+      title: "AR 3D Design Concept",
+      desc: "AR creation with 3D design to solve problems with.",
+      image: "/project-4.png",
+      alt: "AR 3D Design Concept"
+    },
+    {
+      title: "Minimalist Web App",
+      desc: "Clean and functional web interface for modern users.",
+      image: "/project-2.png",
+      alt: "Minimalist Web App"
+    },
+    {
+      title: "Brand Identity",
+      desc: "Comprehensive branding for a tech startup.",
+      image: "/project-3.png",
+      alt: "Brand Identity"
+    },
+    {
+      title: "Mobile Experience",
+      desc: "Intuitive mobile application design for global reach.",
+      image: "/project-4.png",
+      alt: "Mobile Experience"
+    }
+  ];
+
   return (
     <section className="py-24 px-6 md:px-10 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -333,69 +369,36 @@ const ProjectsSection = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          {/* Main Large Card */}
-          <div className="md:col-span-1 relative overflow-hidden rounded-[40px] border border-gray-100 group cursor-pointer">
-            <Image 
-              src="/project%204.png" 
-              alt="AR 3D Design on monitor" 
-              width={1000} 
-              height={1400}
-              className="object-cover h-[520px] w-full"
-              referrerPolicy="no-referrer"
-            />
-            {/* Arrow Button */}
-            <div className="absolute top-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-text-dark transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
-              <ArrowUpRight size={24} />
-            </div>
-            {/* Tag */}
-            <div className="absolute left-6 bottom-6 right-6">
-              <div className="bg-white p-6 rounded-[32px] border border-gray-50">
-                <div className="flex items-center gap-2 mb-1">
-                  <div className="w-1.5 h-1.5 rounded-full bg-brand" />
-                  <span className="text-sm font-bold text-text-dark">AR 3D Design Concept</span>
+          {projects.map((project, idx) => (
+            <div key={idx} className="relative overflow-hidden rounded-[40px] border border-gray-100 group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
+              <Image 
+                src={project.image} 
+                alt={project.alt} 
+                width={1000} 
+                height={1400}
+                className="object-cover h-[520px] w-full transition-transform duration-500 group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+              
+              {/* Arrow Button - Appear on Hover */}
+              <div className="absolute top-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-text-dark transition-all duration-300 opacity-0 translate-x-4 -translate-y-4 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 shadow-lg z-10">
+                <ArrowUpRight size={24} />
+              </div>
+
+              {/* Tag / Info - Appear on Hover */}
+              <div className="absolute left-6 bottom-6 right-6 transition-all duration-300 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+                <div className="bg-white p-6 rounded-[32px] shadow-2xl border border-gray-50">
+                  <div className="flex items-center gap-2 mb-1">
+                    <div className="w-1.5 h-1.5 rounded-full bg-brand" />
+                    <span className="text-sm font-bold text-text-dark">{project.title}</span>
+                  </div>
+                  <p className="text-[10px] text-text-muted leading-relaxed">
+                    {project.desc}
+                  </p>
                 </div>
-                <p className="text-[10px] text-text-muted leading-relaxed">
-                  AR creation with 3D design to solve problems with.
-                </p>
               </div>
             </div>
-          </div>
-          
-          {/* Vertical Image 2 */}
-          <div className="relative overflow-hidden rounded-[40px] border border-gray-100">
-            <Image 
-              src="/project%202.png" 
-              alt="Project 2" 
-              width={800} 
-              height={1200}
-              className="object-cover h-[520px] w-full"
-              referrerPolicy="no-referrer"
-            />
-          </div>
-
-          {/* Vertical Image 3 */}
-          <div className="relative overflow-hidden rounded-[40px] border border-gray-100">
-            <Image 
-              src="/project%203.png" 
-              alt="Project 3" 
-              width={800} 
-              height={1200}
-              className="object-cover h-[520px] w-full"
-              referrerPolicy="no-referrer"
-            />
-          </div>
-
-          {/* Vertical Image 4 */}
-          <div className="relative overflow-hidden rounded-[40px] border border-gray-100">
-            <Image 
-              src="/project%204.png" 
-              alt="Project 4" 
-              width={800} 
-              height={1200}
-              className="object-cover h-[520px] w-full"
-              referrerPolicy="no-referrer"
-            />
-          </div>
+          ))}
         </div>
       </div>
     </section>
