@@ -119,7 +119,7 @@ const Hero = () => {
             className="w-full max-w-5xl transition-all duration-700"
           >
             <Image
-              src="/hero-section.png" 
+              src="/hero%20section.png" 
               alt="Professional Team" 
               width={1600} 
               height={900} 
@@ -176,13 +176,13 @@ const Hero = () => {
 const ServingSection = () => {
   const offices = [
     {
-      image: "/we-are-serving-1.png",
+      image: "/We%20are%20serving%20section%20image%201.png",
       title: "Sisyphus Office",
       location: "Bournemouth, Poole – UK",
       alt: "Sisyphus Office space"
     },
     {
-      image: "/we-are-serving-2.png",
+      image: "/we%20are%20serving%20section%20image%202.png",
       title: "Main Hub",
       location: "London, City Center – UK",
       alt: "Conference and meeting room"
@@ -327,25 +327,25 @@ const ProjectsSection = () => {
     {
       title: "AR 3D Design Concept",
       desc: "AR creation with 3D design to solve problems with.",
-      image: "/project-4.png",
+      image: "/project%204.png",
       alt: "AR 3D Design Concept"
     },
     {
       title: "Minimalist Web App",
       desc: "Clean and functional web interface for modern users.",
-      image: "/project-2.png",
+      image: "/project%202.png",
       alt: "Minimalist Web App"
     },
     {
       title: "Brand Identity",
       desc: "Comprehensive branding for a tech startup.",
-      image: "/project-3.png",
+      image: "/project%203.png",
       alt: "Brand Identity"
     },
     {
       title: "Mobile Experience",
       desc: "Intuitive mobile application design for global reach.",
-      image: "/project-4.png",
+      image: "/project%204.png",
       alt: "Mobile Experience"
     }
   ];
