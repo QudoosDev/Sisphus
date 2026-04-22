@@ -1,8 +1,7 @@
+<img width="1906" height="914" alt="Sisphus" src="https://github.com/user-attachments/assets/f3ec8523-5bbd-4c07-bfaf-8968d00331d0" />
 # Sisyphus Design Agency 🎨
 
 A premium, high-fidelity design agency landing page built with a focus on Swiss-Modern aesthetics and high-performance frontend engineering.
-
-![Sisyphus Landing Page](./public/hero-preview.png)
 
 ## ✨ Overview
 
